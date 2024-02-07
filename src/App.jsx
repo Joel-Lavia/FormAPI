@@ -1,23 +1,14 @@
 import "./App.css";
-import Data from "./Models/Data.json";
+import Formulaire from "./components/Formulaire";
+import Data from "./data/initial-data.json";
 function App() {
-  const data = Data.map((datas) => {
-    return (
-      <div key={datas.id}>
-        <p>{datas.tweetSetence}</p>
-        <img src={datas.avatar} alt="" />
-        <img src={datas.tweetimg} alt="" />
-
-      </div>
-    );
-  });
-
-  return (
-   <div
-  >{data}
-  </div>
-  )
   
+  return (
+    <div>
+      {/* {data} */}
+      <Formulaire/>
+    </div>
+  );
 }
 
 export default App;
